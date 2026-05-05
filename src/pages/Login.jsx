@@ -5,7 +5,7 @@ import { useAuth } from '../App'
 import { Eye, EyeOff, LogIn } from 'lucide-react'
 import toast from 'react-hot-toast'
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const API = `${import.meta.env.VITE_API_URL}/api` || 'http://localhost:5000/api'
 
 export default function Login() {
   const [mode, setMode]       = useState('student') // 'student' | 'admin'
